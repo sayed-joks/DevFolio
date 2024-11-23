@@ -1,0 +1,5 @@
+@media screen and (min-width: 1000px){
+    #about .gap-4{
+        gap: 0;
+    }
+}

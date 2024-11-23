@@ -1,0 +1,729 @@
+a{
+    text-decoration: none;
+}
+body{
+    background: #F5F5F5;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color-blue:#0078FF;
+}
+/* nav section */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    z-index: 1000;
+}
+nav ul li a{
+    color: white;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+}
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+nav ul li a::before{
+    content: '';
+    width: 0%;
+    height: .1875rem;
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    border-radius: 1.25rem;
+}
+nav ul li a:hover::before{
+    animation: hover-link .5s ease;
+    animation-fill-mode: both;
+}
+@keyframes hover-link {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+/* end nav section */
+/* hero section */
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hero-bg.jpg) center center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+}
+header h1{
+    /* font-size: 72px; */
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 5.375rem; */
+    font-weight: 600;
+}
+header h1::after{
+    content: '';
+    height: .3125rem;
+    display: block;
+    margin: .625rem auto;
+    animation: freelancer 12s infinite;
+    /* font-size: 2.5rem; */
+    font-size: 24px;
+    line-height: 3.75rem;
+    font-weight: 600;
+}
+@keyframes freelancer {
+    0%{
+        content: '|';
+    }
+    2%{
+        content: 'F|';
+    }
+    3%{
+        content: 'Fr|';
+    }
+    4%{
+        content: 'Fre|';
+    }
+    5%{
+        content: 'Fren|';
+    }
+    6%{
+        content: 'Freel|';
+    }
+    7%{
+        content: 'Freela|';
+    }
+    8%{
+        content: 'Freelan|';
+    }
+    9%{
+        content: 'Freelanc|';
+    }
+    10%{
+        content: 'Freelance|';
+    }
+    11%{
+        content: 'Freelancer|';
+    }
+    12%{
+        content: 'Freelancer|';
+    }
+    13%{
+        content: 'Freelance|';
+    }
+    14%{
+        content: 'Freelanc|';
+    }
+    15%{
+        content: 'Freelan|';
+    }
+    16%{
+        content: 'Freela|';
+    }
+    17%{
+        content: 'Freel|';
+    }
+    18%{
+        content: 'Fre|';
+    }
+    19%{
+        content: 'F|';
+    }
+    20%{
+        content: 'D|';
+    }
+    21%{
+        content: 'De|';
+    }
+    22%{
+        content: 'Dev|';
+    }
+    23%{
+        content: 'Deve|';
+    }
+    24%{
+        content: 'Devel|';
+    }
+    25%{
+        content: 'Develo|';
+    }
+    26%{
+        content: 'Developer|';
+    }
+    27%{
+        content: 'Developer|';
+    }
+    28%{
+        content: 'Develop|';
+    }
+    29%{
+        content: 'Deve|';
+    }
+    30%{
+        content: 'Dev|';
+    }
+    31%{
+        content: 'De|';
+    }
+    32%{
+        content: 'D|';
+    }
+    33%{
+        content: 'F|';
+    }
+    34%{
+        content: 'Fr|';
+    }
+    35%{
+        content: 'Fre|';
+    }
+    36%{
+        content: 'Fre|';
+    }
+    37%{
+        content: 'Frel|';
+    }
+    38%{
+        content: 'Frela|';
+    }
+    39%{
+        content: 'Frelan|';
+    }
+    40%{
+        content: 'Frelanc|';
+    }
+    41%{
+        content: 'Frelance|';
+    }
+    42%{
+        content: 'Frelancer|';
+    }
+    43%{
+        content: 'Frelancer|';
+    }
+    44%{
+        content: 'Frelance|';
+    }
+    45%{
+        content: 'Frelanc|';
+    }
+    46%{
+        content: 'Frelan|';
+    }
+    47%{
+        content: 'Frela|';
+    }
+    48%{
+        content: 'Frel|';
+    }
+    49%{
+        content: 'Fre|';
+    }
+    50%{
+        content: 'Fr|';
+    }
+    51%{
+        content: 'F|';
+    }
+    52%{
+        content: '|';
+    }
+    53%{
+        content: 'D|';
+    }
+    54%{
+        content: 'De|';
+    }
+    55%{
+        content: 'Dev|';
+    }
+    56%{
+        content: 'Deve|';
+    }
+    57%{
+        content: 'Devel|';
+    }
+    58%{
+        content: 'Develo|';
+    }
+    59%{
+        content: 'Developer|';
+    }
+    60%{
+        content: 'Developer|';
+    }
+    61%{
+        content: 'Develop|';
+    }
+    62%{
+        content: 'Develo|';
+    }
+    63%{
+        content: 'Devel|';
+    }
+    64%{
+        content: 'Deve|';
+    }
+    65%{
+        content: 'Dev|';
+    }
+    66%{
+        content: 'De|';
+    }
+    67%{
+        content: 'D|';
+    }
+    68%{
+        content: '|';
+    }
+    69%{
+        content: 'F|';
+    }
+    70%{
+        content: 'Fr|';
+    }
+    71%{
+        content: 'Fre|';
+    }
+    72%{
+        content: 'Fre|';
+    }
+    73%{
+        content: 'Frel|';
+    }
+    74%{
+        content: 'Frela|';
+    }
+    75%{
+        content: 'Frelan|';
+    }
+    76%{
+        content: 'Frelanc|';
+    }
+    77%{
+        content: 'Frelance|';
+    }
+    78%{
+        content: 'Frelancer|';
+    }
+    79%{
+        content: 'Frelancer|';
+    }
+    80%{
+        content: 'Frelance|';
+    }
+    81%{
+        content: 'Frelanc|';
+    }
+    82%{
+        content: 'Frelan|';
+    }
+    83%{
+        content: 'Frela|';
+    }
+    84%{
+        content: 'Frel|';
+    }
+    85%{
+        content: 'Fre|';
+    }
+    86%{
+        content: 'Fr|';
+    }
+    87%{
+        content: 'F|';
+    }
+    88%{
+        content: '|';
+    }
+    89%{
+        content: 'D|';
+    }
+    90%{
+        content: 'De|';
+    }
+    91%{
+        content: 'Dev|';
+    }
+    92%{
+        content: 'Deve|';
+    }
+    93%{
+        content: 'Devel|';
+    }
+    94%{
+        content: 'Develo|';
+    }
+    95%{
+        content: 'Developer|';
+    }
+    96%{
+        content: 'Develop|';
+    }
+    97%{
+        content: 'Deve|';
+    }
+    98%{
+        content: 'Dev|';
+    }
+    99%{
+        content: 'De|';
+    }
+    100%{
+        content: '|';
+    }
+}
+/* End hero Section */
+/* Start About Section */
+#about{
+    padding: 1.25rem 0;
+}
+.card-body li{
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+    font-weight: 600;
+    span{
+        font-weight: normal;
+        font-size: 16px;
+        color: rgb(78, 78, 78);
+    }
+}
+.title-progress h2{
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.progress{
+    background: #CDE1F8 ;
+    height: .625rem;
+    border-radius: 0;
+}
+.title-about h3{
+    font-size: 1.5625rem;
+    line-height: 2.375rem;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+    position: relative;
+}
+.title-about h3::before{
+    content:'';
+    position: absolute;
+    width: 6.25rem;
+    height: .1875rem;
+    background: var(--bg-color-blue);
+    bottom: -0.625rem;
+    left: 0;
+}
+.box-shadow{
+    padding: 48px 20px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 48px;
+    z-index: 2;
+    box-shadow: 0 .0625rem .0625rem 0 rgba(0, 0, 0, 0.06), 0 .125rem .3125rem 0 rgba(0, 0, 0, 0.2);
+}
+.cont-about img{
+    border-radius: 1.25rem;
+}
+.caption-about{
+    margin-top: 1.25rem;
+}
+.title-skill h3{
+    font-size: 1rem;
+}
+/* End About Section */
+/* Start services Section */
+#Services{
+    padding: 1.25rem 0;
+    text-align: center;
+}
+.title-section{
+    margin-bottom: 3.125rem;
+}
+.title-section h3{
+    text-transform: uppercase;
+    font-size: 41.6px;
+    line-height: 2.375rem;
+    color: rgb(30, 30, 30);
+    font-weight: 700;
+}
+.title-section p{
+    color: rgb(78, 78, 78);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+    position: relative;
+}
+.title-section p::before{
+    content:'';
+    position: absolute;
+    width: 3.125rem;
+    height: .1875rem;
+    background: var(--bg-color-blue);
+    bottom: -0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-services .card{
+    padding: .625rem;
+    border-radius: .9375rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    i{
+        font-size: 2.5rem;
+        padding: 1.25rem;
+        border: .4375rem solid #0078FF;
+        border-radius:50%;
+    }
+}
+.card-services i{
+    transition: all .5s ease;
+}
+.card-services:hover i{
+    background: #0078FF;
+    border-color: rgb(180, 255, 248);
+    /* box-shadow:0 0 0 .375rem rgba(0, 0, 255, .4); */
+    color: #fff;
+}
+/* End services Section */
+/* Start portfolio Section */
+.inner{ 
+    background: #fff;
+}
+.inner img{
+    transition: all .5s ease;
+}
+.inner:hover img{
+    transform: scale(1.2);
+}
+#work .box-shadow-work{
+    box-shadow:0 .8125rem .5rem -0.625rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 48px;
+}
+.caption-card-work h2{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    line-height: 23px;
+}
+.caption-card-work p , span{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+.icon-card-work i{
+    color: #0078FF;
+    font-size: 24px;
+    font-weight: 100;
+    padding: .3125rem;
+    border: .125rem solid #0078FF;
+    border-radius: 50%;
+}
+/* End portfolio Section */
+/* Start Experience Section */
+.my-exp{
+    padding: 1.25rem 0;
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(6, 90, 185, 0.9),rgba(6, 90, 185, 0.7)),url(../images/post-3.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-exp{
+    color: #fff;
+}
+.icon-detalis i{
+    font-size: 1.25rem;
+    padding: 1.125rem;
+    border: .5rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    margin:.3125rem 0;
+}
+/* End Experience Section */
+/* Start Clints Section */
+#Clints{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(6, 90, 185, 0.9),rgba(6, 90, 185, 0.7)),url(../images/overlay-bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#Clints .img-clint img{
+    border-radius: 50%;
+}
+.about-clint h3{
+    margin: .625rem 0;
+}
+/* End Clints Section */
+/* Start Blog Section */
+.middle-title{
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+.middle-title h3{
+    background: #09c;
+    font-size: 12px;
+    padding: 8px 25px;
+    border-radius: .3125rem;
+}
+.inner-blog{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) .1219rem .1219rem .1625rem;
+    border-left: 1px solid #929292;
+}
+.inner-blog picture{
+    margin-bottom: 1.25rem;
+}
+.caption-card-blog{
+    width: 90%;
+    margin: 0 auto;
+}
+.caption-card-blog a{
+    font-size: 1.3125rem;
+    font-weight: 500;
+    line-height: 25px;
+    color: #000;
+    padding-bottom: 10px;
+    transition: all .3s;
+}
+.caption-card-blog a:hover{
+    color: var(--bg-color-blue);
+}
+.caption-card-blog p{
+    line-height: 24px;
+    color: rgb(78, 78, 78);
+}
+.post-author{
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+}
+.post-author a{
+    color: #000;
+    transition: all .3s;
+}
+.post-author a:hover{
+    color: var(--bg-color-blue);
+}
+.post-author a img{
+    width: 10%;
+}
+.post-date{
+    font-size: 14px;
+}
+/* End Blog Section */
+/* Start Contact Section */
+#contact{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(6, 90, 185, 0.9),rgba(6, 90, 185, 0.7)),url(../images/overlay-bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.form-group{
+    margin-bottom: 1.25rem;
+}
+.card-header-contact h2{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 25px;
+    color: #000;
+    padding-bottom: 10px;
+    margin: 40px 0;
+}
+.card-header-contact h2::before{
+    content: '';
+    position: absolute;
+    width: 6.125rem;
+    height: .1875rem;
+    background: var(--bg-color-blue);
+    bottom: -0.625rem;
+    left: 0;
+}
+.card-body{
+    padding-left: 0;
+}
+.card-body p{
+    color: rgb(78, 78, 78);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2rem;
+    width: 95%;
+}
+.list-unstyled i{
+    margin-bottom: 1rem;
+    color: var(--bg-color-blue);
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.list-inline-item i{
+    color: #000;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: 2px solid var(--bg-color-blue);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.list-inline-item i:hover{
+    background: var(--bg-color-blue);
+    color: #fff;
+    border-color: rgb(180, 255, 248);
+}
+/* End Contact Section */
+/* Start Footer */
+footer{
+    background: #0062D3;
+    color: #fff;
+    padding: 1.25rem 0;
+}
+/* End Footer */
+.back-to-top{
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: var(--bg-color-blue);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.25rem;
+    transition: all .3s;
+    z-index: 1000;
+}
+.back-to-top:hover{
+    color: #fff;
+}
